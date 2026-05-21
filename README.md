@@ -7,6 +7,7 @@ Projeto da disciplina AS2: aplicação Django com boas práticas de administração d
 - Repositório inicializado
 - Estrutura base criada
 - Dependências definidas
+- Páginas principais implementadas
 
 ## Configuração local (ambiente virtual)
 
@@ -16,6 +17,12 @@ Projeto da disciplina AS2: aplicação Django com boas práticas de administração d
    - Windows PowerShell: `.\.venv\Scripts\Activate.ps1`
 3. Instalar dependências:
    - `pip install -r requirements.txt`
+
+## Variáveis de ambiente
+
+1. Criar `.env` com base no exemplo:
+   - `Copy-Item .env.example .env`
+2. Ajustar os valores no `.env` para o teu ambiente.
 
 ## Repositório
 
