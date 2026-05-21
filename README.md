@@ -29,6 +29,13 @@ Projeto da disciplina AS2: aplicação Django com boas práticas de administração d
 - Para MySQL (Docker/produção): `DB_ENGINE=mysql`
 - Para SQLite (desenvolvimento local sem MySQL): `DB_ENGINE=sqlite`
 
+## Docker
+
+1. Build da imagem:
+   - `docker build -t projeto-final-as2 .`
+2. Correr container:
+   - `docker run --rm -p 8000:8000 --env-file .env projeto-final-as2`
+
 ## Repositório
 
 - GitHub: https://github.com/Negelo/projeto_final_as2
