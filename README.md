@@ -24,6 +24,11 @@ Projeto da disciplina AS2: aplicação Django com boas práticas de administração d
    - `Copy-Item .env.example .env`
 2. Ajustar os valores no `.env` para o teu ambiente.
 
+## Base de dados
+
+- Para MySQL (Docker/produção): `DB_ENGINE=mysql`
+- Para SQLite (desenvolvimento local sem MySQL): `DB_ENGINE=sqlite`
+
 ## Repositório
 
 - GitHub: https://github.com/Negelo/projeto_final_as2
