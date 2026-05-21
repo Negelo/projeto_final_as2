@@ -36,6 +36,13 @@ Projeto da disciplina AS2: aplicação Django com boas práticas de administração d
 2. Correr container:
    - `docker run --rm -p 8000:8000 --env-file .env projeto-final-as2`
 
+## Docker Compose
+
+1. Subir serviços (Django + MySQL):
+   - `docker compose up --build`
+2. Parar serviços:
+   - `docker compose down`
+
 ## Repositório
 
 - GitHub: https://github.com/Negelo/projeto_final_as2
