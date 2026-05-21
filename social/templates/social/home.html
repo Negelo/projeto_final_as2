@@ -1,0 +1,18 @@
+{% extends "social/base.html" %}
+{% block title %}Página Inicial{% endblock %}
+{% block content %}
+    <h2>Todas as publicações</h2>
+    {% for post in posts %}
+        <div class="card">
+            <h3><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h3>
+            <p class="meta">
+                por <a href="{% url 'user_posts' post.author.username %}">{{ post.author.username }}</a>
+                em {{ post.created_at }}
+            </p>
+            <p>{{ post.content|truncatechars:180 }}</p>
+            <p class="meta">Likes: {{ post.like_count }} | Comentários: {{ post.comment_count }}</p>
+        </div>
+    {% empty %}
+        <p>Sem publicações para mostrar.</p>
+    {% endfor %}
+{% endblock %}

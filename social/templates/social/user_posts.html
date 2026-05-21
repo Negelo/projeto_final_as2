@@ -1,0 +1,14 @@
+{% extends "social/base.html" %}
+{% block title %}Publicações de {{ username }}{% endblock %}
+{% block content %}
+    <h2>Publicações de {{ username }}</h2>
+    {% for post in posts %}
+        <div class="card">
+            <h3><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h3>
+            <p class="meta">{{ post.created_at }}</p>
+            <p>{{ post.content|truncatechars:220 }}</p>
+        </div>
+    {% empty %}
+        <p>Este utilizador ainda não tem publicações.</p>
+    {% endfor %}
+{% endblock %}
